@@ -1,0 +1,36 @@
+@use 'src/styles'as*;
+
+.Footer {
+	padding: 1.25rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 0.2rem solid $fg;
+
+	.copyright {
+		font-size: 1rem;
+		font-weight: 100;
+	}
+
+	.socials {
+		display: flex;
+		gap: 0.6rem;
+	}
+
+	.social {
+		background: none;
+		border: none;
+		color: $fg;
+		font-size: 1.5rem;
+		transition: background 100ms;
+	}
+
+	.social:hover {
+		color: $font;
+		cursor: pointer;
+	}
+
+	.social:focus {
+		outline: none;
+	}
+}

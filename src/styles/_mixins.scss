@@ -1,0 +1,9 @@
+@use './variables'as *;
+
+@mixin media() {
+	$size: map-get($breakpoints, medium);
+
+	@media (min-width: $size) {
+		@content;
+	}
+}

@@ -1,0 +1,12 @@
+.Projects {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+
+	.project-cards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+}

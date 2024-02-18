@@ -1,0 +1,65 @@
+@use 'src/styles'as *;
+
+.Card {
+	text-decoration: none;
+	color: $font;
+	background: $fg;
+	overflow: hidden;
+	border-radius: 2px;
+	box-shadow: 0px 0px 10px 3px #171717;
+	min-width: 33%;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 16rem;
+	flex-grow: 1;
+
+	&:last-child {
+		@include media() {
+			max-width: 50%;
+		}
+	}
+
+	&:hover {
+		background: $fg-light;
+		transition: background 200ms;
+	}
+
+	.title {
+		font-weight: 400;
+		font-size: 1.75rem;
+	}
+
+	.preview {
+		width: 100%;
+	}
+
+	.details {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 1.3rem;
+		font-size: 1rem;
+		height: 100%;
+		gap: 1rem;
+	}
+
+	.details-head {
+		display: flex;
+		flex-direction: column;
+		gap: 0.3rem;
+	}
+
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.tag {
+		background: $accent;
+		padding: 0.35rem;
+		border-radius: 3px;
+		font-size: 1rem;
+		width: max-content;
+	}
+}

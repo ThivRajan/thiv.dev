@@ -1,0 +1,43 @@
+@use "src/styles" as *;
+
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .name {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+  .title {
+    color: $accent;
+    font-weight: 300;
+  }
+
+  .description {
+    max-width: 75ch;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .socials {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .social {
+    font-size: 2rem;
+    background: none;
+    color: $font;
+  }
+
+  .social:hover {
+    color: $accent;
+    cursor: pointer;
+  }
+
+  .social:focus {
+    outline: none;
+  }
+}

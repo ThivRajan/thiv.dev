@@ -1,0 +1,24 @@
+@use 'src/styles'as *;
+
+body {
+	background: $bg;
+	color: $font;
+	font-family: $main-font;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	font-family: $header-font;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+p {
+	margin: 0;
+}

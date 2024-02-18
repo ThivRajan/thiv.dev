@@ -1,0 +1,13 @@
+@use 'src/styles'as *;
+
+.App {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	margin: 3.5rem auto 0 auto;
+	width: 85%;
+
+	@include media() {
+		width: 65%;
+	}
+}
