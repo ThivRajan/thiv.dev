@@ -6,5 +6,6 @@
 		"source.fixAll.eslint": "explicit"
 	},
 	"eslint.validate": ["javascript", "typescript"],
-	"eslint.workingDirectories": ["/app"]
+	"eslint.workingDirectories": ["/app"],
+	"prettier.documentSelectors": ["**/*.astro"]
 }
