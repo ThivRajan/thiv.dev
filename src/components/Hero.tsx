@@ -1,7 +1,5 @@
 import Typewriter, { type Options } from 'typewriter-effect'
-import avatar from '../assets/Memoji Avatar.png'
-
-// For code-block styles: https://www.codiga.io/blog/tag/coding-assistant/
+import avatar from '../assets/Avatar.png'
 
 const ROLES = [
 	'Full Stack Software Developer',
