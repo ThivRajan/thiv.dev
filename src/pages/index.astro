@@ -1,8 +1,10 @@
 ---
-import Counter from '../components/Counter'
+import Hero from '../components/Hero'
 import '../index.css'
 ---
 
-<div class="bg-red-500">
-	<Counter client:idle />
+<div class="bg-gray-700 h-screen min-h-full flex justify-center">
+	<div class="w-full p-6 max-w-2xl">
+		<Hero client:idle />
+	</div>
 </div>
