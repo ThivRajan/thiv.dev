@@ -1,36 +1,26 @@
-#infinity {
-	--width: 3rem;
-	--radius: calc(25 / 106 * var(--width));
-	position: relative;
-	width: var(--width);
-	height: calc(var(--width) / 2);
-	box-sizing: content-box;
-}
-#infinity:before,
-#infinity:after {
-	--length: calc(15 / 53 * var(--width));
-
-	content: '';
-	box-sizing: content-box;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: var(--length);
-	height: var(--length);
-	border: calc(5 / 53 * var(--width)) solid rgb(30, 47, 74);
-	border-radius: var(--radius) var(--radius) 0 var(--radius);
-	transform: rotate(-45deg);
-}
-
-#infinity:after {
-	left: auto;
-	right: 0;
-	border-radius: var(--radius) var(--radius) var(--radius) 0;
-	transform: rotate(45deg);
-}
-
-#infinity:hover:after,
-#infinity:hover:before {
-	transition: border-color 500ms;
+.divider:hover > * {
+	background: black;
 	border-color: black;
+}
+
+.square {
+	--width: 1.5rem;
+	--border-width: 10;
+	--border: calc(var(--width) / var(--border-width));
+	background: rgb(30, 47, 74);
+
+	width: var(--width);
+	aspect-ratio: 1;
+	clip-path: polygon(
+		100% 50%,
+		50% 100%,
+		0% 50%,
+		50% 0%,
+		100% 50%,
+		calc(50% - 0px) calc(0% - calc(-1 * var(--border))),
+		calc(0% - calc(-1 * var(--border))) calc(50% - 0px),
+		calc(50% - 0px) calc(100% - var(--border)),
+		calc(100% - var(--border)) calc(50% - 0px),
+		calc(50% - 0px) calc(0% - calc(-1 * var(--border)))
+	);
 }
