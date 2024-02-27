@@ -4,7 +4,7 @@ const ANIMATION_STYLES = 'transition-all duration-500'
 
 export default function Divider() {
 	return (
-		<div className="divider flex justify-center items-center gap-3">
+		<div className="divider flex justify-center items-center gap-4">
 			<StyledRuler />
 			<div
 				className={`square bg-slate-500 transition-all ${ANIMATION_STYLES}`}
@@ -15,5 +15,5 @@ export default function Divider() {
 }
 
 const StyledRuler = () => (
-	<hr className={`border-1px border-slate-500 w-1/5 ${ANIMATION_STYLES}`} />
+	<hr className={`border-1px border-slate-500 w-[10%] ${ANIMATION_STYLES}`} />
 )
