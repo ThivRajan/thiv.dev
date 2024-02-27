@@ -1,0 +1,36 @@
+#infinity {
+	--width: 3rem;
+	--radius: calc(25 / 106 * var(--width));
+	position: relative;
+	width: var(--width);
+	height: calc(var(--width) / 2);
+	box-sizing: content-box;
+}
+#infinity:before,
+#infinity:after {
+	--length: calc(15 / 53 * var(--width));
+
+	content: '';
+	box-sizing: content-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--length);
+	height: var(--length);
+	border: calc(5 / 53 * var(--width)) solid rgb(30, 47, 74);
+	border-radius: var(--radius) var(--radius) 0 var(--radius);
+	transform: rotate(-45deg);
+}
+
+#infinity:after {
+	left: auto;
+	right: 0;
+	border-radius: var(--radius) var(--radius) var(--radius) 0;
+	transform: rotate(45deg);
+}
+
+#infinity:hover:after,
+#infinity:hover:before {
+	transition: border-color 500ms;
+	border-color: black;
+}
