@@ -15,5 +15,5 @@ export default function Divider() {
 }
 
 const StyledRuler = () => (
-	<hr className={`border-1px border-slate-500 w-[10%] ${ANIMATION_STYLES}`} />
+	<span className={`text-4xl text-slate-500 ${ANIMATION_STYLES}`}>~</span>
 )
