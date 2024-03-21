@@ -1,0 +1,23 @@
+.about-text > a {
+	--start-color: rgb(100 116 139);
+	--end-color: black;
+	position: relative;
+	color: var(--start-color);
+	overflow: hidden;
+	background: linear-gradient(
+		to right,
+		var(--end-color),
+		var(--end-color) 50%,
+		var(--start-color) 50%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 275ms ease;
+}
+
+.about-text > a:hover {
+	background-position: 0 100%;
+}
