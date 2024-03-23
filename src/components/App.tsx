@@ -3,11 +3,9 @@ import { useEffect, type ReactNode } from 'react'
 export default function App({ children }: { children: ReactNode }) {
 	useEffect(() => {
 		document.addEventListener('mousemove', update)
-		document.addEventListener('touchmove', update)
 
 		return () => {
 			document.removeEventListener('mousemove', update)
-			document.removeEventListener('touchmove', update)
 		}
 	}, [])
 
@@ -16,11 +14,9 @@ export default function App({ children }: { children: ReactNode }) {
 	)
 }
 
-// TODO: update type
-function update(e: any) {
-	const x = e.clientX || e.touches[0].clientX
-	const y = e.clientY || e.touches[0].clientY
-
+function update(e: MouseEvent) {
+	const x = e.clientX
+	const y = e.clientY
 	document.documentElement.style.setProperty('--cursorX', x + 'px')
 	document.documentElement.style.setProperty('--cursorY', y + 'px')
 }
