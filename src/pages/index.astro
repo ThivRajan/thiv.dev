@@ -1,5 +1,6 @@
 ---
 import About from '../components/About'
+import App from '../components/App'
 import Divider from '../components/Divider/Divider'
 import Hero from '../components/Hero'
 
@@ -7,9 +8,9 @@ import '../index.css'
 ---
 
 <div class="bg-gray-700 h-screen min-h-full flex justify-center">
-	<div class="flex flex-col w-full p-6 max-w-2xl gap-8">
+	<App client:idle>
 		<Hero client:idle />
 		<Divider />
 		<About />
-	</div>
+	</App>
 </div>
