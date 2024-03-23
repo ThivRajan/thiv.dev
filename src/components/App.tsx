@@ -3,7 +3,6 @@ import { useEffect, type ReactNode } from 'react'
 export default function App({ children }: { children: ReactNode }) {
 	useEffect(() => {
 		document.addEventListener('mousemove', update)
-
 		return () => {
 			document.removeEventListener('mousemove', update)
 		}
