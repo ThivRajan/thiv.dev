@@ -1,10 +1,8 @@
-import './About.css'
-
 export default function About() {
 	return (
 		<div className="text-white flex flex-col gap-2">
 			<h1 className="font-medium text-3xl">About</h1>
-			<p className="about-text">
+			<p>
 				Hi there! Welcome to my portfolio. I&apos;m currently working at{' '}
 				<a
 					href="https://www.canada.ca/en/environment-climate-change.html"
