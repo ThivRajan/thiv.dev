@@ -17,7 +17,7 @@
 
 a {
 	--end-color: black;
-	color: rgb(97, 123, 158);
+	color: rgb(100 116 139);
 	text-decoration: none;
 	background-image: linear-gradient(rgb(55 65 81), rgb(55 65 81)),
 		linear-gradient(var(--end-color), var(--end-color));
