@@ -1,0 +1,29 @@
+.divider:hover > span {
+	color: black;
+}
+
+.divider:hover > div {
+	background: black;
+}
+
+.square {
+	--width: 1.5rem;
+	--border-width: 8;
+	--border: calc(var(--width) / var(--border-width));
+	background: rgb(30, 47, 74);
+
+	width: var(--width);
+	aspect-ratio: 1;
+	clip-path: polygon(
+		100% 50%,
+		50% 100%,
+		0% 50%,
+		50% 0%,
+		100% 50%,
+		calc(50% - 0px) calc(0% - calc(-1 * var(--border))),
+		calc(0% - calc(-1 * var(--border))) calc(50% - 0px),
+		calc(50% - 0px) calc(100% - var(--border)),
+		calc(100% - var(--border)) calc(50% - 0px),
+		calc(50% - 0px) calc(0% - calc(-1 * var(--border)))
+	);
+}
