@@ -9,7 +9,9 @@ export default function App({ children }: { children: ReactNode }) {
 	}, [])
 
 	return (
-		<div className="flex flex-col w-full p-6 max-w-2xl gap-8">{children}</div>
+		<div className="flex flex-col w-full h-max p-6 max-w-2xl gap-8">
+			{children}
+		</div>
 	)
 }
 
