@@ -1,12 +1,12 @@
 import hltbIcon from '../../assets/hltb-lite-icon.png'
 import museIcon from '../../assets/muse-icon.png'
 
-export const PROJECTS_CONFIG = [
+export const PROJECT_CONFIG = [
 	{
 		tags: ['TypeScript', 'React', 'Nextjs'],
 		title: 'HLTB Lite',
 		description:
-			'Data visualization tool to quickly view video-game completion data using React and Next.js',
+			'Quickly visualize video game completion data from HowLongToBeat.com',
 		img: hltbIcon.src,
 		link: 'https://hltb-lite.vercel.app/',
 		colors: {
@@ -18,13 +18,13 @@ export const PROJECTS_CONFIG = [
 	{
 		tags: ['TypeScript', 'React', 'Node.js'],
 		title: 'Muse',
-		description: 'Generate AI cover letters in one click.',
+		description: 'Generate AI cover letters in one click',
 		img: museIcon.src,
 		link: 'https://chromewebstore.google.com/detail/muse-ai-cover-letters-in/bodebbnhcdimdjiakhoijjfoabdjlfop',
 		colors: {
 			bg: 'hover:bg-gray-100',
 			text: 'group-hover:text-gray-800',
-			tags: 'group-hover:bg-gray-800',
+			tags: 'group-hover:bg-red-800',
 		},
 	},
 ]
