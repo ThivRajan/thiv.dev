@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.card {
+		background: linear-gradient(
+			to right,
+			var(--card-bg) 50%,
+			rgb(55 65 81) 50%
+		);
+		background-size: 200% 100%;
+		background-position: right bottom;
+		transition: all 0.75s ease-out;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.card:hover {
+		background-position: left bottom;
+	}
+}
+
 :root:before {
 	display: block;
 	width: 100%;
@@ -15,7 +34,7 @@
 	);
 }
 
-a {
+a.text-link {
 	--end-color: black;
 	color: rgb(100 116 139);
 	text-decoration: none;
@@ -33,7 +52,7 @@ a {
 		color 0.25s;
 }
 
-a:hover {
+a.text-link:hover {
 	background-size:
 		0 2px,
 		100% 2px;
