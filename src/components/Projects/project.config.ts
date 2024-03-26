@@ -10,7 +10,7 @@ export const PROJECT_CONFIG = [
 		img: hltbIcon.src,
 		link: 'https://hltb-lite.vercel.app/',
 		colors: {
-			bg: 'hover:bg-blue-100',
+			bg: '#bad7f5',
 			text: 'group-hover:text-blue-800',
 			tags: 'group-hover:bg-blue-800',
 		},
@@ -22,7 +22,7 @@ export const PROJECT_CONFIG = [
 		img: museIcon.src,
 		link: 'https://chromewebstore.google.com/detail/muse-ai-cover-letters-in/bodebbnhcdimdjiakhoijjfoabdjlfop',
 		colors: {
-			bg: 'hover:bg-gray-100',
+			bg: '#d1d1d1',
 			text: 'group-hover:text-gray-800',
 			tags: 'group-hover:bg-red-800',
 		},

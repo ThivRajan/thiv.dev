@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react'
+
 export default function ProjectCard(props: {
 	tags: string[]
 	title: string
@@ -14,10 +16,11 @@ export default function ProjectCard(props: {
 
 	return (
 		<a
-			className={`flex gap-4 rounded p-4 cursor-pointer border border-slate-600 ${colors.bg} transition-all duration-1000 group`}
+			className={`card flex gap-4 rounded p-4 cursor-pointer border border-slate-600 group`}
 			href={link}
 			target="_blank"
 			rel="noreferrer"
+			style={{ '--card-bg': colors.bg } as CSSProperties}
 		>
 			<img
 				src={img}
@@ -25,13 +28,19 @@ export default function ProjectCard(props: {
 				className="w-1/5 max-w-1/4 object-scale-down"
 			/>
 			<div className="flex flex-col justify-between gap-2">
-				<h3 className={`font-semibold ${colors.text}`}>{title}</h3>
-				<p className={colors.text}>{description}</p>
+				<h3
+					className={`description font-semibold ${colors.text} transition-all duration-[900ms]`}
+				>
+					{title}
+				</h3>
+				<span className={`${colors.text} transition-all duration-[900ms]`}>
+					{description}
+				</span>
 				<div className="flex gap-2">
 					{tags.map((tag) => (
 						<span
 							key={tag}
-							className={`rounded bg-slate-800 p-2 ${colors.tags}`}
+							className={`rounded bg-slate-800 p-2 ${colors.tags} transition-all duration-[900ms]`}
 						>
 							{tag}
 						</span>
