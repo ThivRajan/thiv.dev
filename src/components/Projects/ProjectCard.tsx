@@ -40,7 +40,7 @@ export default function ProjectCard(props: {
 					{tags.map((tag) => (
 						<span
 							key={tag}
-							className={`rounded bg-slate-800 p-2 ${colors.tags} transition-all duration-[900ms]`}
+							className={`rounded bg-slate-600 p-2 ${colors.tags} transition-all duration-[900ms]`}
 						>
 							{tag}
 						</span>

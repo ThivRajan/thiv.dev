@@ -10,7 +10,7 @@ export const PROJECT_CONFIG = [
 		img: hltbIcon.src,
 		link: 'https://hltb-lite.vercel.app/',
 		colors: {
-			bg: '#bad7f5',
+			bg: '#d6eaff',
 			text: 'group-hover:text-blue-800',
 			tags: 'group-hover:bg-blue-800',
 		},
@@ -24,7 +24,7 @@ export const PROJECT_CONFIG = [
 		colors: {
 			bg: '#d1d1d1',
 			text: 'group-hover:text-gray-800',
-			tags: 'group-hover:bg-red-800',
+			tags: 'group-hover:bg-gray-800',
 		},
 	},
 ]
