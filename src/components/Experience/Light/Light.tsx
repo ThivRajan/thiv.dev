@@ -12,7 +12,7 @@ export default function Light({
 }) {
 	return (
 		<div
-			className={`square-wrapper ${selected && 'selected'} cursor-pointer`}
+			className={`frame-wrapper ${selected && 'selected'} cursor-pointer`}
 			style={
 				{
 					'--light-bg': color,
@@ -20,9 +20,9 @@ export default function Light({
 			}
 			onClick={setSelected}
 		>
-			<div className="square bg-slate-800">
-				<div className={`light-wrapper ${selected && 'selected'}`}>
-					<div className="light shadow-md" />
+			<div className="frame bg-slate-800 diamond">
+				<div className="light-wrapper">
+					<div className="light shadow-md diamond" />
 				</div>
 			</div>
 		</div>
