@@ -3,7 +3,8 @@ import Light from './Light/Light'
 import { EXPERIENCE_CONFIG } from './experience.config'
 
 export default function Experience() {
-	const [selectedJob, setSelectedJob] = useState(0)
+	const [selectedJobIdx, setSelectedJobIdx] = useState(0)
+	const selectedJob = EXPERIENCE_CONFIG[selectedJobIdx]
 
 	return (
 		<div className="text-white flex flex-col gap-4">
@@ -14,18 +15,17 @@ export default function Experience() {
 					<div className="flex flex-col h-full justify-between">
 						{EXPERIENCE_CONFIG.map((exp, idx) => (
 							<Light
-								selected={idx === selectedJob}
-								key={exp.title}
-								setSelected={() => setSelectedJob(idx)}
+								selected={idx === selectedJobIdx}
+								key={idx}
+								setSelected={() => setSelectedJobIdx(idx)}
+								color={exp.color}
 							/>
 						))}
 					</div>
 				</div>
 				<div className="flex flex-col gap-1">
-					<h3 className="font-semibold text-lg">
-						{EXPERIENCE_CONFIG[selectedJob].title}
-					</h3>
-					<p>{EXPERIENCE_CONFIG[selectedJob].description}</p>
+					<h3 className="font-semibold text-lg">{selectedJob.title}</h3>
+					<p>{selectedJob.description}</p>
 				</div>
 			</div>
 		</div>

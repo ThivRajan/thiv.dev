@@ -1,19 +1,8 @@
-.liquid-wrapper:hover {
-	cursor: pointer;
-	filter: drop-shadow(0 0 3px #1fa4e0);
-}
-
-.square-wrapper:hover {
-	cursor: pointer;
-	filter: drop-shadow(0 -4px 10px #1fa4e0);
-}
-
-.liquid {
+.light {
 	--width: 0.9rem;
 	--border-width: 2;
 	--border: calc(var(--width) / var(--border-width));
 
-	background: #1fa4e0;
 	width: var(--width);
 	aspect-ratio: 1;
 	transform: translateX(0.3rem) translateY(0.3rem);
