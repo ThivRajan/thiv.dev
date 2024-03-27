@@ -3,6 +3,9 @@
 	--border-width: 2;
 	--border: calc(var(--width) / var(--border-width));
 
+	transition: background 0.5s;
+	background: rgb(30 41 59);
+
 	width: var(--width);
 	aspect-ratio: 1;
 	transform: translateX(0.3rem) translateY(0.3rem);
@@ -19,11 +22,24 @@
 		calc(50% - 0px) calc(0% - calc(-1 * var(--border)))
 	);
 }
+.light-wrapper {
+	transition: filter 0.5s;
+}
+.light-wrapper.selected {
+	filter: drop-shadow(0 0 3px var(--light-bg));
+}
+
+.light-wrapper.selected > .light {
+	background: var(--light-bg);
+}
 
 .square {
 	--width: 1.5rem;
 	--border-width: 2;
 	--border: calc(var(--width) / var(--border-width));
+
+	transition: filter 0.5s;
+
 	width: var(--width);
 	aspect-ratio: 1;
 	clip-path: polygon(
@@ -38,4 +54,9 @@
 		calc(100% - var(--border)) calc(50% - 0px),
 		calc(50% - 0px) calc(0% - calc(-1 * var(--border)))
 	);
+}
+
+.square-wrapper.selected,
+.square-wrapper:hover {
+	filter: drop-shadow(0 -4px 10px var(--light-bg));
 }
