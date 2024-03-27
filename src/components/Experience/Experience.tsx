@@ -4,16 +4,16 @@ import Light from './Light/Light'
 import { EXPERIENCE_CONFIG } from './experience.config'
 
 export default function Experience() {
-	const [animationName, setAnimationName] = useState('slideDown')
-	const [slideDirection, setSlideDirection] = useState('Down')
+	const [animationName, setAnimationName] = useState('fadeIn')
 	const [selectedJobIdx, setSelectedJobIdx] = useState(0)
 	const selectedJob = EXPERIENCE_CONFIG[selectedJobIdx]
 
+	// Restart animation on job change
 	useEffect(() => {
 		setAnimationName(
-			`slide${slideDirection}${animationName.includes('Restart') ? '' : 'Restart'}`,
+			`fadeIn${animationName.includes('Restart') ? '' : 'Restart'}`,
 		)
-	}, [slideDirection, selectedJobIdx])
+	}, [selectedJobIdx])
 
 	return (
 		<div className="text-white flex flex-col gap-4 ">
@@ -26,23 +26,18 @@ export default function Experience() {
 							<Light
 								selected={idx === selectedJobIdx}
 								key={idx}
-								setSelected={() => {
-									setSelectedJobIdx((prevIdx) => {
-										setSlideDirection(idx > prevIdx ? 'Down' : 'Up')
-										return idx
-									})
-								}}
+								setSelected={() => setSelectedJobIdx(idx)}
 								color={exp.color}
 							/>
 						))}
 					</div>
 				</div>
-				<div className="flex flex-col gap-1 relative w-full overflow-hidden">
+				<div className="flex flex-col gap-1 w-full">
 					<div
-						className="absolute h-full"
+						className="h-full"
 						style={{
 							animationName,
-							animationDuration: '1s',
+							animationDuration: '3s',
 						}}
 					>
 						<h3 className="font-semibold text-lg">{selectedJob.title}</h3>

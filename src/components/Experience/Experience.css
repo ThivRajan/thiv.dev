@@ -1,39 +1,19 @@
-@keyframes slideDown {
+@keyframes fadeIn {
 	0% {
-		top: -100px;
+		opacity: 0%;
 	}
 
 	100% {
-		top: 0px;
+		opacity: 100%;
 	}
 }
 
-@keyframes slideDownRestart {
+@keyframes fadeInRestart {
 	0% {
-		top: -100px;
+		opacity: 0%;
 	}
 
 	100% {
-		top: 0px;
-	}
-}
-
-@keyframes slideUp {
-	0% {
-		top: 100px;
-	}
-
-	100% {
-		top: 0px;
-	}
-}
-
-@keyframes slideUpRestart {
-	0% {
-		top: 100px;
-	}
-
-	100% {
-		top: 0px;
+		opacity: 100%;
 	}
 }
