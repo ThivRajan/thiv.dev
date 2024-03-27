@@ -4,10 +4,26 @@
 		filter 0.5s,
 		background 0.5s;
 }
-.frame-wrapper:hover,
-.frame-wrapper.selected {
+.frame-wrapper:hover {
 	filter: drop-shadow(0 -4px 10px var(--light-bg));
 }
+.frame-wrapper.selected {
+	animation: pulse 3s linear infinite;
+}
+@keyframes pulse {
+	0% {
+		filter: drop-shadow(0 -4px 10px var(--light-bg));
+	}
+
+	50% {
+		filter: none;
+	}
+
+	100% {
+		filter: drop-shadow(0 -4px 10px var(--light-bg));
+	}
+}
+
 .frame-wrapper.selected .light-wrapper {
 	filter: drop-shadow(0 0 3px var(--light-bg));
 }
