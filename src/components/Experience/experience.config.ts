@@ -2,19 +2,19 @@ export const EXPERIENCE_CONFIG = [
 	{
 		title: 'Environment & Climate Change Canada',
 		description:
-			'Led a cross-functional team of 5 in an Agile Environment through the entire software development life cycle (SDLC) to deliver a weather station editor by using Jira for project planning and management, reducing monthly divisional labour by 3,000 hours',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
 		color: 'red',
 	},
 	{
 		title: 'Cion Studio',
 		description:
-			'Led a cross-functional team of 5 in an Agile Environment through the entire software development life cycle (SDLC) to deliver a weather station editor by using Jira for project planning and management, reducing monthly divisional labour by 3,000 hours',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
 		color: '#1fa4e0',
 	},
 	{
 		title: 'IT Collaborative Inc.',
 		description:
-			'Led a cross-functional team of 5 in an Agile Environment through the entire software development life cycle (SDLC) to deliver a weather station editor by using Jira for project planning and management, reducing monthly divisional labour by 3,000 hours',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
 		color: 'green',
 	},
 ]

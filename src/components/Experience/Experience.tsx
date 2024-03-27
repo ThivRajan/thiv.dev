@@ -5,14 +5,15 @@ import { EXPERIENCE_CONFIG } from './experience.config'
 
 export default function Experience() {
 	const [animationName, setAnimationName] = useState('slideDown')
+	const [slideDirection, setSlideDirection] = useState('Down')
 	const [selectedJobIdx, setSelectedJobIdx] = useState(0)
 	const selectedJob = EXPERIENCE_CONFIG[selectedJobIdx]
 
 	useEffect(() => {
 		setAnimationName(
-			animationName === 'slideDown' ? 'slideDownRestart' : 'slideDown',
+			`slide${slideDirection}${animationName.includes('Restart') ? '' : 'Restart'}`,
 		)
-	}, [selectedJobIdx])
+	}, [slideDirection, selectedJobIdx])
 
 	return (
 		<div className="text-white flex flex-col gap-4 ">
@@ -25,7 +26,12 @@ export default function Experience() {
 							<Light
 								selected={idx === selectedJobIdx}
 								key={idx}
-								setSelected={() => setSelectedJobIdx(idx)}
+								setSelected={() => {
+									setSelectedJobIdx((prevIdx) => {
+										setSlideDirection(idx > prevIdx ? 'Down' : 'Up')
+										return idx
+									})
+								}}
 								color={exp.color}
 							/>
 						))}
