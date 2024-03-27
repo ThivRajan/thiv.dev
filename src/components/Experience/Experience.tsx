@@ -32,17 +32,15 @@ export default function Experience() {
 						))}
 					</div>
 				</div>
-				<div className="flex flex-col gap-1 w-full">
-					<div
-						className="h-full"
-						style={{
-							animationName,
-							animationDuration: '3s',
-						}}
-					>
-						<h3 className="font-semibold text-lg">{selectedJob.title}</h3>
-						<p>{selectedJob.description}</p>
-					</div>
+				<div
+					className="flex flex-col gap-1"
+					style={{
+						animationName,
+						animationDuration: '3s',
+					}}
+				>
+					<h3 className="font-semibold text-lg">{selectedJob.title}</h3>
+					<p>{selectedJob.description}</p>
 				</div>
 			</div>
 		</div>
