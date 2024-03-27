@@ -14,6 +14,7 @@ export default function ProjectCard(props: {
 }) {
 	const { tags, title, description, img, link, colors } = props
 
+	// TODO: add drop shadow on hover
 	return (
 		<a
 			className={`card flex gap-4 rounded p-4 cursor-pointer border border-slate-600 group`}
