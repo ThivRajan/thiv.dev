@@ -12,7 +12,7 @@ export const PROJECT_CONFIG = [
 		colors: {
 			bg: '#1e293b',
 			text: 'group-hover:text-white',
-			tags: 'group-hover:bg-slate-600',
+			tags: 'group-hover:bg-rose-800',
 		},
 	},
 	{
