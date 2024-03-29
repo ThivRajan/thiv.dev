@@ -33,28 +33,3 @@
 		rgba(0, 0, 0, 0) 150%
 	);
 }
-
-a.text-link {
-	--end-color: black;
-	color: rgb(100 116 139);
-	text-decoration: none;
-	background-image: linear-gradient(rgb(55 65 81), rgb(55 65 81)),
-		linear-gradient(var(--end-color), var(--end-color));
-	background-size:
-		100% 2px,
-		0 2px;
-	background-position:
-		100% 100%,
-		0 100%;
-	background-repeat: no-repeat;
-	transition:
-		background-size 0.25s linear,
-		color 0.25s;
-}
-
-a.text-link:hover {
-	background-size:
-		0 2px,
-		100% 2px;
-	color: var(--end-color);
-}
