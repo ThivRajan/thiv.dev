@@ -1,6 +1,6 @@
 import Typewriter, { type Options } from 'typewriter-effect'
 import avatar from '../assets/Avatar.png'
-import ContactBar from './ContactBar/ContactBar'
+import ContactsBar from './ContactsBar/ContactsBar'
 
 const ROLES = [
 	'Full Stack Software Developer',
@@ -33,7 +33,7 @@ export default function Hero() {
 					</code>
 				</div>
 				<div className="lg:hidden block">
-					<ContactBar />
+					<ContactsBar />
 				</div>
 			</div>
 		</div>

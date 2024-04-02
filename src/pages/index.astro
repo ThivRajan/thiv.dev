@@ -1,6 +1,6 @@
 ---
 import App from '../components/App'
-import ContactBar from '../components/ContactBar/ContactBar'
+import ContactsBar from '../components/ContactsBar/ContactsBar'
 import Experience from '../components/Experience/Experience'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects/Projects'
@@ -11,7 +11,7 @@ import '../index.css'
 	class="bg-gray-700 h-screen min-h-full flex justify-center overflow-auto relative"
 >
 	<div class="hidden lg:block fixed top-[50%] translate-y-[-50%] right-10">
-		<ContactBar client:idle />
+		<ContactsBar client:idle />
 	</div>
 	<App client:idle>
 		<Hero client:idle />
