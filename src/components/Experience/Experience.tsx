@@ -16,10 +16,10 @@ export default function Experience() {
 	}, [selectedJobIdx])
 
 	return (
-		<div className="text-white flex flex-col gap-4 ">
+		<div className="text-white flex flex-col gap-4">
 			<h1 className="font-medium text-3xl">Experience</h1>
-			<div className="flex gap-4">
-				<div className="h-[15rem] w-8 relative">
+			<div className="flex gap-4 h-[17rem]">
+				<div className="w-8 relative">
 					<div className="h-[90%] left-2.5 top-[5%] w-1 bg-slate-800 absolute" />
 					<div className="flex flex-col h-full justify-between">
 						{EXPERIENCE_CONFIG.map((exp, idx) => (
@@ -33,14 +33,20 @@ export default function Experience() {
 					</div>
 				</div>
 				<div
-					className="flex flex-col gap-1"
+					className="flex flex-col gap-2"
 					style={{
 						animationName,
 						animationDuration: '3s',
 					}}
 				>
 					<h3 className="font-semibold text-lg">{selectedJob.title}</h3>
-					<p>{selectedJob.description}</p>
+					<ul className="flex flex-col gap-4 overflow-auto">
+						{selectedJob.jobPoints.map((jobPoint, idx) => (
+							<li key={idx} className="list-disc list-inside">
+								{jobPoint}
+							</li>
+						))}
+					</ul>
 				</div>
 			</div>
 		</div>
