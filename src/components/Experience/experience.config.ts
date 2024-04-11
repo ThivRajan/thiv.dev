@@ -4,7 +4,10 @@ export const EXPERIENCE_CONFIG = [
 		jobPoints: [
 			'Led a cross-functional team in an Agile Environment to deliver a weather station editor',
 			'Developed reusable dashboards and grids to allow for remote sensor viewing',
-			'Mentored interns on Angular architecture, version control, and writing documentation, fostering both technical and communication skills',
+			'Built an end-to-end solution to query a meteorological database by creating an innovative user interface and RESTful API, allowing millions of payloads to be fetched at once',
+			'Conducted bi-monthly data validation via manual and automated regression testing for back-end components and web applications while coordinating with the DevOps team, ensuring smooth releases across multiple federal departments',
+			'Provided post-production support for multiple web applications by regularly addressing client feedback',
+			'Mentored interns on code review, version control, and writing documentation, fostering both technical and communication skills',
 		],
 		color: 'red',
 	},
@@ -13,6 +16,7 @@ export const EXPERIENCE_CONFIG = [
 		jobPoints: [
 			'Transformed the user experience of a skate-sharpening e-commerce store by re-building login, ordering, and checkout pages, allowing users to quickly place finely-tuned sharpening orders',
 			'Crafted custom static sites for small businesses across various platforms and strategically optimized SEO to boost online reach and expand their client base',
+			'Created on-boarding information architecture for new developers, including API and UI documentation, flow diagrams and code review guidelines',
 		],
 		color: 'green',
 	},
