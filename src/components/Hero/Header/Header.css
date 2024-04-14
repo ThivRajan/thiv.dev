@@ -1,17 +1,11 @@
-.header {
-	--text-color: rgb(107, 61, 61);
-}
-
-.first-name,
-.last-name {
+.title {
 	color: transparent;
 	-webkit-text-stroke: 2px var(--text-color);
 	position: relative;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.first-name::before,
-.last-name::before {
+.title::before {
 	position: absolute;
 	color: var(--text-color);
 	width: 0%;
@@ -19,15 +13,10 @@
 	overflow: hidden;
 }
 
-.first-name::before {
-	content: 'THIV';
-	animation: name 1s linear forwards;
-}
-
-.last-name::before {
-	content: 'RAJAN';
-	animation: name 2s linear forwards;
-	animation-delay: 1s;
+.title::before {
+	content: attr(data-text);
+	animation: name var(--duration) linear forwards;
+	animation-delay: var(--delay);
 }
 
 @keyframes name {
