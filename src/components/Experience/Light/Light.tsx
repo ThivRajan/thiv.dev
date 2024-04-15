@@ -3,11 +3,9 @@ import './Light.css'
 
 export default function Light({
 	selected,
-	setSelected,
 	color,
 }: {
 	selected?: boolean
-	setSelected: any
 	color: string
 }) {
 	return (
@@ -18,7 +16,6 @@ export default function Light({
 					'--light-bg': color,
 				} as CSSProperties
 			}
-			onClick={setSelected}
 		>
 			<div className="frame bg-slate-800 diamond">
 				<div className="light-wrapper">

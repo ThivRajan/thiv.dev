@@ -23,12 +23,9 @@ export default function Experience() {
 					<div className="h-[90%] left-2.5 top-[5%] w-1 bg-slate-800 absolute" />
 					<div className="flex flex-col h-full justify-between">
 						{EXPERIENCE_CONFIG.map((exp, idx) => (
-							<Light
-								selected={idx === selectedJobIdx}
-								key={idx}
-								setSelected={() => setSelectedJobIdx(idx)}
-								color={exp.color}
-							/>
+							<div key={idx} onClick={() => setSelectedJobIdx(idx)}>
+								<Light selected={idx === selectedJobIdx} color={exp.color} />
+							</div>
 						))}
 					</div>
 				</div>
