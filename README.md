@@ -5,7 +5,7 @@
   thiv.dev
 </h1>
 
-The second version of my portfolio website (check out the `v1` branch for the previous version).
+<p align="center">The second version of my portfolio website. Check out the <a href="https://github.com/ThivRajan/thiv.dev/tree/v1">v1 branch</a> for the old version.</p>
 
 ## Commands
 
