@@ -1,20 +1,15 @@
 import type { CSSProperties } from 'react'
+import type { Project } from '../project.config'
 import './ProjectCard.css'
 
-export default function ProjectCard(props: {
-	tags: string[]
-	title: string
-	description: string
-	img: string
-	link: string
-	colors: {
-		text: string
-		bg: string
-		tags: string
-	}
-}) {
-	const { tags, title, description, img, link, colors } = props
-
+export default function ProjectCard({
+	tags,
+	title,
+	description,
+	img,
+	link,
+	colors,
+}: Project) {
 	// TODO: add drop shadow on hover
 	return (
 		<a
