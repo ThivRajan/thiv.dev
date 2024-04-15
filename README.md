@@ -1,6 +1,6 @@
 # thiv.dev
 
-![logo](https://github.com/ThivRajan/Muse/blob/main/public/muse-logo.png)
+![Portfolio Logo](https://github.com/ThivRajan/thiv.dev/blob/main/public/favicon.png)
 
 The second version of my portfolio website (check out the branch `v1` for the previous version).
 
