@@ -1,19 +1,11 @@
-import { useEffect, useState } from 'react'
-import './Experience.css'
+import { useState } from 'react'
+import JobInfo from './JobInfo/JobInfo'
 import Light from './Light/Light'
 import { EXPERIENCE_CONFIG } from './experience.config'
 
 export default function Experience() {
-	const [animationName, setAnimationName] = useState('fadeIn')
 	const [selectedJobIdx, setSelectedJobIdx] = useState(0)
 	const selectedJob = EXPERIENCE_CONFIG[selectedJobIdx]
-
-	// Restart animation on job change
-	useEffect(() => {
-		setAnimationName(
-			`fadeIn${animationName.includes('Restart') ? '' : 'Restart'}`,
-		)
-	}, [selectedJobIdx])
 
 	return (
 		<div className="text-white flex flex-col gap-4">
@@ -29,22 +21,7 @@ export default function Experience() {
 						))}
 					</div>
 				</div>
-				<div
-					className="flex flex-col gap-2"
-					style={{
-						animationName,
-						animationDuration: '3s',
-					}}
-				>
-					<h3 className="font-semibold text-lg">{selectedJob.title}</h3>
-					<ul className="flex flex-col gap-4 overflow-auto">
-						{selectedJob.jobPoints.map((jobPoint, idx) => (
-							<li key={idx} className="list-disc list-inside">
-								{jobPoint}
-							</li>
-						))}
-					</ul>
-				</div>
+				<JobInfo job={selectedJob} />
 			</div>
 		</div>
 	)
