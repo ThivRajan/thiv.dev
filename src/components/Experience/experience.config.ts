@@ -37,3 +37,5 @@ export const EXPERIENCE_CONFIG = [
 		color: 'white',
 	},
 ]
+
+export type Job = (typeof EXPERIENCE_CONFIG)[number]
