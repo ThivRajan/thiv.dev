@@ -1,0 +1,12 @@
+.card {
+	background: linear-gradient(to right, var(--card-bg) 50%, rgb(55 65 81) 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all 0.75s ease-out;
+	position: relative;
+	overflow: hidden;
+}
+
+.card:hover {
+	background-position: left bottom;
+}

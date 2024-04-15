@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react'
+import './ProjectCard.css'
 
 export default function ProjectCard(props: {
 	tags: string[]
