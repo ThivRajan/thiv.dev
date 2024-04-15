@@ -1,6 +1,9 @@
-# thiv.dev
-
-![Portfolio Logo](https://github.com/ThivRajan/thiv.dev/blob/main/public/favicon.png)
+<div align="center">
+  <img alt="Logo" src="https://github.com/ThivRajan/thiv.dev/blob/main/public/favicon.png" width="100" />
+</div>
+<h1 align="center">
+  thiv.dev
+</h1>
 
 The second version of my portfolio website (check out the branch `v1` for the previous version).
 
