@@ -1,6 +1,6 @@
-import hltbIcon from '../../assets/hltb-lite-icon.png'
-import museIcon from '../../assets/muse-icon.png'
-import portfolioIcon from '../../assets/portfolio-icon.png'
+import hltbIcon from '@assets/hltb-lite-icon.png'
+import museIcon from '@assets/muse-icon.png'
+import portfolioIcon from '@assets/portfolio-icon.png'
 
 export const PROJECT_CONFIG = [
 	{
