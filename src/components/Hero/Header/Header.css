@@ -12,9 +12,6 @@
 	width: 0%;
 	height: 100%;
 	overflow: hidden;
-}
-
-.title::before {
 	content: attr(data-text);
 	animation: name var(--duration) linear forwards;
 	animation-delay: var(--delay);
