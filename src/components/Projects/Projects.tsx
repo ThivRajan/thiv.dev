@@ -1,4 +1,4 @@
-import ProjectCard from './ProjectCard'
+import ProjectCard from './ProjectCard/ProjectCard'
 import { PROJECT_CONFIG } from './project.config'
 
 export default function Projects() {
