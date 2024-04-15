@@ -21,7 +21,7 @@ export default function Experience() {
 						))}
 					</div>
 				</div>
-				<JobInfo job={selectedJob} />
+				<JobInfo {...selectedJob} />
 			</div>
 		</div>
 	)

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import type { Job } from '../experience.config'
 import './JobInfo.css'
 
-export default function JobInfo({ job }: { job: Job }) {
+export default function JobInfo(job: Job) {
 	const [animationName, setAnimationName] = useState('fadeIn')
 
 	// Restart animation on job change
