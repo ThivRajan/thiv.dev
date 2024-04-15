@@ -27,7 +27,7 @@ export default function Header({
 				return (
 					<h1
 						key={idx}
-						className="text-5xl title"
+						className="text-5xl segment"
 						style={
 							{
 								'--duration': `${duration}s`,
