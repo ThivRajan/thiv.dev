@@ -2,6 +2,7 @@
 	color: transparent;
 	-webkit-text-stroke: 2px var(--text-color);
 	position: relative;
+	font-weight: bold;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

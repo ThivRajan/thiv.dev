@@ -14,11 +14,7 @@ export default function Hero() {
 		<div className="flex flex-col items-center sm:flex-row gap-8">
 			<img src={avatar.src} alt="avatar" className="w-1/3" />
 			<div className="flex flex-col items-center sm:items-start gap-4 w-full">
-				<Header
-					title="THIV RAJAN"
-					animateDuration={3}
-					color="rgb(107, 61, 61)"
-				/>
+				<Header title="THIV RAJAN" animateDuration={3} color="#1d2740" />
 				<div className="bg-slate-800 rounded p-4 min-w-[35ch] w-full max-w-full">
 					<code className="text-gray-400 italic">
 						<Typewriter
