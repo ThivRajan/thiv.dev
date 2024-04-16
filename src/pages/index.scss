@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 body {
+	--app-bg: rgb(55 65 81);
+	--app-fg: rgb(71 85 105);
+	--app-highlight: rgb(30 41 59);
+
 	font-family: 'Noto Sans';
+	background: var(--app-bg);
 }
 
 .float-wrapper {

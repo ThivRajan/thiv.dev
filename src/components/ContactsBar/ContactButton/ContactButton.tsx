@@ -9,7 +9,7 @@ export default function ContactButton({ link, icon, color }: Contact) {
 			href={link}
 			target="_blank"
 			rel="noreferrer"
-			className="contact-button block p-3 rounded-md w-fit border-4 text-3xl shadow-md transition-all duration-700 text-slate-600 border-slate-600 hover:bg-slate-800"
+			className="contact-button block p-3 rounded-md w-fit border-4 text-3xl shadow-md transition-all duration-700"
 			style={
 				{
 					'--fg': color,
