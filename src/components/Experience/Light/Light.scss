@@ -1,10 +1,7 @@
-.frame-wrapper {
-	&,
-	* {
-		transition:
-			filter 0.5s,
-			background 0.5s;
-	}
+.light-wrapper {
+	transition:
+		filter 0.5s,
+		background 0.5s;
 
 	&:hover {
 		filter: drop-shadow(0 -4px 10px var(--light-bg));
@@ -12,10 +9,7 @@
 
 	&.selected {
 		animation: pulse 3s linear infinite;
-
-		.light-wrapper {
-			filter: drop-shadow(0 0 3px var(--light-bg));
-		}
+		filter: drop-shadow(0 0 3px var(--light-bg));
 
 		.light {
 			background: var(--light-bg);
@@ -29,9 +23,7 @@
 
 		width: var(--light-width);
 		background: var(--app-fg);
-	}
 
-	.diamond {
 		aspect-ratio: 1;
 		clip-path: polygon(
 			100% 50%,
