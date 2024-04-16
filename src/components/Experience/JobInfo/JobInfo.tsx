@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type CSSProperties } from 'react'
 import type { Job } from '../experience.config'
 import './JobInfo.scss'
 
@@ -15,10 +15,13 @@ export default function JobInfo(job: Job) {
 	return (
 		<div
 			className="flex flex-col gap-2 job-info"
-			style={{
-				animationName,
-				animationDuration: '3s',
-			}}
+			style={
+				{
+					animationName,
+					animationDuration: '3s',
+					'--color': job.color,
+				} as CSSProperties
+			}
 		>
 			<h3 className="font-semibold text-lg">{job.title}</h3>
 			<ul className="flex flex-col gap-4 overflow-auto">
