@@ -1,10 +1,9 @@
 ---
-import App from '@components/App'
 import ContactsBar from '@components/ContactsBar/ContactsBar'
 import Experience from '@components/Experience/Experience'
 import Hero from '@components/Hero/Hero'
 import Projects from '@components/Projects/Projects'
-import '../index.scss'
+import './index.scss'
 ---
 
 <html lang="en">
@@ -29,11 +28,11 @@ import '../index.scss'
 			>
 				<ContactsBar client:idle />
 			</div>
-			<App client:idle>
+			<div class="flex flex-col w-full h-max p-6 max-w-2xl gap-8">
 				<Hero client:idle />
 				<Projects />
 				<Experience client:idle />
-			</App>
+			</div>
 		</div>
 	</body>
 </html>

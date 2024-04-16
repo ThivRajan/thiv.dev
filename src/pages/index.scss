@@ -6,18 +6,6 @@ body {
 	font-family: 'Noto Sans';
 }
 
-:root:before {
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	background: radial-gradient(
-		circle 15vmax at var(--cursorX) var(--cursorY),
-		rgba(215, 215, 215, 0.058),
-		rgba(0, 0, 0, 0) 150%
-	);
-}
-
 .float-wrapper {
 	animation: float 1.75s ease-in-out infinite;
 
