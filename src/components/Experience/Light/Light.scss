@@ -22,22 +22,13 @@
 		}
 	}
 
-	.frame {
-		--frame-width: 1.5rem;
-		--border-width: 2;
-		--border: calc(var(--frame-width) / var(--border-width));
-		width: var(--frame-width);
-	}
-
 	.light {
-		--light-width: 0.9rem;
+		--light-width: 1.5rem;
 		--border-width: 2;
 		--border: calc(var(--light-width) / var(--border-width));
-		--padding: calc((var(--frame-width) - var(--light-width)) / 2);
 
 		width: var(--light-width);
-		background: rgb(30 41 59);
-		transform: translateX(var(--padding)) translateY(var(--padding));
+		background: var(--app-fg);
 	}
 
 	.diamond {
@@ -58,7 +49,7 @@
 
 	@keyframes pulse {
 		0% {
-			filter: drop-shadow(0 -4px 10px var(--light-bg));
+			filter: drop-shadow(0 -4px 14px var(--light-bg));
 		}
 
 		50% {
@@ -66,7 +57,7 @@
 		}
 
 		100% {
-			filter: drop-shadow(0 -4px 10px var(--light-bg));
+			filter: drop-shadow(0 -4px 14px var(--light-bg));
 		}
 	}
 }

@@ -17,10 +17,8 @@ export default function Light({
 				} as CSSProperties
 			}
 		>
-			<div className="frame bg-slate-800 diamond">
-				<div className="light-wrapper">
-					<div className="light shadow-md diamond" />
-				</div>
+			<div className="light-wrapper">
+				<div className="light shadow-md diamond" />
 			</div>
 		</div>
 	)
