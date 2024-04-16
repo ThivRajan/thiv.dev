@@ -33,7 +33,7 @@ export default function ProjectCard({
 				<span className={`${colors.text} transition-all duration-[900ms]`}>
 					{description}
 				</span>
-				<div className="flex gap-2">
+				<div className="flex flex-wrap gap-2">
 					{tags.map((tag) => (
 						<span
 							key={tag}

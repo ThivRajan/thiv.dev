@@ -4,7 +4,7 @@ import Typewriter, { type Options } from 'typewriter-effect'
 import Header from './Header/Header'
 
 const ROLES = [
-	'Full Stack Software Developer',
+	'Software Engineer',
 	'Fantasy/Sci-fi Junkie',
 	'Plotting world domination',
 ].map((role) => `// ${role}`)

@@ -14,12 +14,15 @@ export default function JobInfo(job: Job) {
 
 	return (
 		<div
-			className="flex flex-col gap-2 job-info"
+			className="flex flex-col gap-2 job-info rounded p-4"
 			style={
 				{
 					animationName,
 					animationDuration: '3s',
 					'--color': job.color,
+					borderColor: 'var(--app-fg)',
+					borderStyle: 'solid',
+					borderWidth: '2px 2px 2px 0',
 				} as CSSProperties
 			}
 		>
