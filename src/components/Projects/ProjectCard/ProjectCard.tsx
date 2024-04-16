@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import type { Project } from '../project.config'
-import './ProjectCard.css'
+import './ProjectCard.scss'
 
 export default function ProjectCard({
 	tags,

@@ -1,5 +1,5 @@
 import { type CSSProperties } from 'react'
-import './Light.css'
+import './Light.scss'
 
 export default function Light({
 	selected,

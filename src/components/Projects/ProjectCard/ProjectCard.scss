@@ -5,8 +5,8 @@
 	transition: all 0.75s ease-out;
 	position: relative;
 	overflow: hidden;
-}
 
-.card:hover {
-	background-position: left bottom;
+	&:hover {
+		background-position: left bottom;
+	}
 }

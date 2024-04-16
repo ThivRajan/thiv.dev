@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react'
 import type { CSSProperties } from 'react'
 import type { Contact } from '../contact.config'
-import './ContactButton.css'
+import './ContactButton.scss'
 
 export default function ContactButton({ link, icon, color }: Contact) {
 	return (

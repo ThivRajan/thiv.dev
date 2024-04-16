@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { Job } from '../experience.config'
-import './JobInfo.css'
+import './JobInfo.scss'
 
 export default function JobInfo(job: Job) {
 	const [animationName, setAnimationName] = useState('fadeIn')
@@ -14,7 +14,7 @@ export default function JobInfo(job: Job) {
 
 	return (
 		<div
-			className="flex flex-col gap-2"
+			className="flex flex-col gap-2 job-info"
 			style={{
 				animationName,
 				animationDuration: '3s',
