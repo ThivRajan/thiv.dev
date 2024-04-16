@@ -10,7 +10,7 @@ export const PROJECT_CONFIG = [
 		img: portfolioIcon.src,
 		link: 'https://github.com/ThivRajan/thiv.dev',
 		colors: {
-			bg: '#1e293b',
+			bg: 'var(--app-highlight)',
 			text: 'group-hover:text-white',
 			tags: 'group-hover:bg-rose-800',
 		},

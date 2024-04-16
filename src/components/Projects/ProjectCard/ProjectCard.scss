@@ -1,13 +1,18 @@
 .card {
-	background: linear-gradient(to right, var(--card-bg) 50%, rgb(55 65 81) 50%);
+	background: linear-gradient(to right, var(--card-bg) 50%, var(--app-bg) 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
 	transition: all 0.75s ease-out;
 	position: relative;
 	overflow: hidden;
+	border-color: var(--app-fg);
 
 	&:hover {
 		background-position: left bottom;
 		border-color: var(--card-bg);
+	}
+
+	.tag {
+		background: var(--app-fg);
 	}
 }

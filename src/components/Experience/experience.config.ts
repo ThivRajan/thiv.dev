@@ -9,7 +9,7 @@ export const EXPERIENCE_CONFIG = [
 			'Provided post-production support for multiple web applications by regularly addressing client feedback',
 			'Mentored interns on code review, version control, and writing documentation, fostering both technical and communication skills',
 		],
-		color: 'red',
+		color: '#bd5c5c',
 	},
 	{
 		title: 'Cion Studio',
@@ -18,7 +18,7 @@ export const EXPERIENCE_CONFIG = [
 			'Crafted custom static sites for small businesses across various platforms and strategically optimized SEO to boost online reach and expand their client base',
 			'Created on-boarding information architecture for new developers, including API and UI documentation, flow diagrams and code review guidelines',
 		],
-		color: 'green',
+		color: '#44a67d',
 	},
 	{
 		title: 'IT Collaborative Inc.',
@@ -26,7 +26,7 @@ export const EXPERIENCE_CONFIG = [
 			'Built login, home, and settings pages for both the cross-platform and iOS implementations of a mobile app that allows users to securely access their private documents',
 			"Engineered server-less functions to support new features and  metrics integrations of the company's iOS and Android applications",
 		],
-		color: 'blue',
+		color: '#4463a6',
 	},
 	{
 		title: 'Canadian Institutes of Health Research',
@@ -34,7 +34,7 @@ export const EXPERIENCE_CONFIG = [
 			"Streamlined the workflow of the organization's CRM tool by building custom plugins",
 			'Accelerated legacy CRM retirement timelines by completing QA testing on CRM prototype weeks ahead of schedule',
 		],
-		color: 'white',
+		color: '#919191',
 	},
 ]
 

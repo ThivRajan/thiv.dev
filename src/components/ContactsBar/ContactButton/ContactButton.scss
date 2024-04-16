@@ -1,4 +1,11 @@
-.contact-button:hover {
-	color: var(--fg);
-	border-color: var(--fg);
+.contact-button {
+	border-color: var(--app-fg);
+	color: var(--app-fg);
+
+	&:hover {
+		color: var(--fg);
+		border-color: var(--fg);
+		background: var(--app-highlight);
+		border-color: var(--app-highlight);
+	}
 }

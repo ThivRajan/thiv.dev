@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	--app-bg: rgb(55 65 81);
+	--app-fg: rgb(71 85 105);
+	--app-highlight: rgb(30 41 59);
+
+	font-family: 'Noto Sans';
+	background: var(--app-bg);
+}
+
+.float-wrapper {
+	animation: float 1.75s ease-in-out infinite;
+
+	@keyframes float {
+		0% {
+			transform: translateY(-50%);
+		}
+		50% {
+			transform: translateY(calc(10px - 50%));
+		}
+		100% {
+			transform: translateY(-50%);
+		}
+	}
+}

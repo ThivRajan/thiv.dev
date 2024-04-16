@@ -1,4 +1,29 @@
 .job-info {
+	li {
+		list-style: none;
+
+		&:before {
+			content: '▣';
+			font-size: 15px;
+			margin: 0 11px 0 10px;
+			color: var(--color);
+			animation: glowing 2s infinite;
+			vertical-align: top;
+		}
+	}
+
+	@keyframes glowing {
+		0% {
+			text-shadow: 0 0 5px var(--color);
+		}
+		50% {
+			text-shadow: 0 0 10px var(--color);
+		}
+		100% {
+			text-shadow: 0 0 5px var(--color);
+		}
+	}
+
 	@keyframes fadeIn {
 		0% {
 			opacity: 0%;
