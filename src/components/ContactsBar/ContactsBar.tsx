@@ -1,4 +1,4 @@
-import ContactButton from './ContactButton'
+import ContactButton from './ContactButton/ContactButton'
 import { CONTACT_CONFIG } from './contact.config'
 
 export default function ContactsBar() {

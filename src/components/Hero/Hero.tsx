@@ -1,6 +1,6 @@
+import avatar from '@assets/avatar.png'
+import ContactsBar from '@components/ContactsBar/ContactsBar'
 import Typewriter, { type Options } from 'typewriter-effect'
-import avatar from '../../assets/avatar.png'
-import ContactsBar from '../ContactsBar/ContactsBar'
 import Header from './Header/Header'
 
 const ROLES = [

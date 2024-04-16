@@ -11,3 +11,5 @@ export const CONTACT_CONFIG = [
 	},
 	{ icon: 'bxl:gmail', link: 'mailto:thiv.rajan@gmail.com', color: '#e0a2a2' },
 ]
+
+export type Contact = (typeof CONTACT_CONFIG)[number]
