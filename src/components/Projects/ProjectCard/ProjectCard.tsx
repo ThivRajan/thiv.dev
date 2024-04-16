@@ -13,7 +13,7 @@ export default function ProjectCard({
 	// TODO: add drop shadow on hover
 	return (
 		<a
-			className={`card flex gap-4 rounded p-4 cursor-pointer border border-slate-600 group`}
+			className={`card flex gap-4 rounded p-4 cursor-pointer border group`}
 			href={link}
 			target="_blank"
 			rel="noreferrer"
@@ -37,7 +37,7 @@ export default function ProjectCard({
 					{tags.map((tag) => (
 						<span
 							key={tag}
-							className={`rounded bg-slate-600 p-2 ${colors.tags} transition-all duration-[900ms]`}
+							className={`tag rounded p-2 ${colors.tags} transition-all duration-[900ms]`}
 						>
 							{tag}
 						</span>
