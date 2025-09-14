@@ -1,39 +1,32 @@
 import avatar from '@assets/favicon.png'
+import ContactsBar from '@components/ContactsBar/ContactsBar'
 import Typewriter, { type Options } from 'typewriter-effect'
 
-const ROLES = [
-	'Software Engineer',
-	'Fantasy/Sci-fi Junkie',
-	'Plotting world domination',
-].map((role) => `// ${role}`)
+const ROLES = ['Fullstack Software Engineer'].map((role) => `// ${role}`)
 
 export default function Hero() {
 	return (
-		<div className="flex flex-col items-center sm:flex-row gap-8">
+		<div className="flex flex-col items-center sm:flex-row justify-between gap-6">
 			<img src={avatar.src} alt="avatar" className="w-1/3 float-wrapper" />
-			<div className="flex flex-col items-center sm:items-start gap-4 w-full">
-				<h1 className="text-5xl font-bold">Thiv Rajan</h1>
-				<div
-					className="rounded p-4 min-w-[35ch] w-full max-w-full"
-					style={{
-						background: 'var(--app-highlight)',
-					}}
-				>
-					<code className="text-gray-400 italic">
-						<Typewriter
-							options={
-								{
-									strings: ROLES,
-									autoStart: true,
-									loop: true,
-									delay: 40,
-									pauseFor: 800,
-									deleteSpeed: 40,
-								} as Partial<Options>
-							}
-						/>
-					</code>
+			<div className="flex flex-col gap-4">
+				<div className="flex flex-col items-center sm:items-start gap-2 w-full">
+					<h1 className="text-5xl font-bold">Thiv Rajan</h1>
+					<div className="min-w-[35ch] w-full max-w-full">
+						<code className="text-gray-500 italic">
+							<Typewriter
+								options={
+									{
+										strings: ROLES[0],
+										autoStart: true,
+										loop: false,
+										delay: 40,
+									} as Partial<Options>
+								}
+							/>
+						</code>
+					</div>
 				</div>
+				<ContactsBar />
 			</div>
 		</div>
 	)

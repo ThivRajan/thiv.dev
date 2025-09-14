@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 body {
-	--app-bg: rgb(55 65 81);
-	--app-fg: rgb(71 85 105);
-	--app-highlight: rgb(30 41 59);
+	--app-bg: rgb(44, 45, 53);
+	--app-fg: rgb(67, 67, 67);
+	--app-highlight: rgb(0, 0, 0);
 
 	font-family: 'Noto Sans';
 	background: var(--app-bg);
+	color: rgb(255, 230, 230);
+}
+
+h1 {
+	font-family: 'Namdhinggo', serif;
 }
 
 .float-wrapper {

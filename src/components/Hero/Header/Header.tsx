@@ -14,10 +14,7 @@ export default function Header({
 	const titleSegments = title.split(' ')
 
 	return (
-		<span
-			className="header flex gap-2"
-			style={{ '--text-color': color } as CSSProperties}
-		>
+		<span className="header flex gap-2">
 			{titleSegments.map((segment, idx) => {
 				const duration = (segment.length / totalLength) * animateDuration
 				const delay =

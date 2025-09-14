@@ -1,25 +1,22 @@
+import Card from '@components/Card'
 import { Icon } from '@iconify/react'
-import type { CSSProperties } from 'react'
 import type { Contact } from '../contact.config'
 import './ContactButton.scss'
 
 export default function ContactButton({ link, icon, color }: Contact) {
 	return (
-		<a
-			href={link}
-			target="_blank"
-			rel="noreferrer"
-			className="contact-button block p-3 rounded-md w-fit border-2 text-3xl shadow-md transition-all duration-700"
-			style={
-				{
-					'--fg': color,
-				} as CSSProperties
-			}
-		>
-			<Icon
-				icon={icon}
-				style={{ textShadow: '5px 0px 2px rgba(128, 0, 0, 1)' }}
-			/>
-		</a>
+		<Card>
+			<a
+				href={link}
+				target="_blank"
+				rel="noreferrer"
+				className="contact-button block p-3 w-fit text-3xl"
+			>
+				<Icon
+					icon={icon}
+					style={{ textShadow: '5px 0px 2px rgba(128, 0, 0, 1)' }}
+				/>
+			</a>
+		</Card>
 	)
 }

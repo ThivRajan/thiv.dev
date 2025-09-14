@@ -1,0 +1,19 @@
+.card {
+	--card-border: rgb(57, 59, 70);
+	--card-bg: none;
+	--card-hover-bg: var(--card-border);
+
+	border-color: var(--card-border);
+	background-color: var(--card-bg);
+
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all 0.2s ease-out;
+	position: relative;
+	overflow: hidden;
+
+	&:hover {
+		background-color: var(--card-hover-bg);
+		// color: rgb(88, 157, 69);
+	}
+}

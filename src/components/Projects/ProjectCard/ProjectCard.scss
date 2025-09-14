@@ -1,18 +1,18 @@
-.card {
-	// background: linear-gradient(to right, var(--card-bg) 50%, var(--app-bg) 50%);
-	background-size: 200% 100%;
-	background-position: right bottom;
-	transition: all 0.25s ease-out;
-	position: relative;
-	overflow: hidden;
-	border-color: var(--app-fg);
+// .card {
+// 	background-size: 200% 100%;
+// 	background-position: right bottom;
+// 	transition: all 0.2s ease-out;
+// 	position: relative;
+// 	overflow: hidden;
+// 	border-color: var(--card-border);
+// 	background-color: var(--card-bg);
 
-	&:hover {
-		background-color: var(--card-bg);
-		border-color: var(--card-bg);
-	}
+// 	&:hover {
+// 		background-color: var(--card-hover-bg);
+// 		// color: rgb(88, 157, 69);
+// 	}
 
-	.tag {
-		background: var(--app-fg);
-	}
-}
+// 	.tag {
+// 		background: var(--app-fg);
+// 	}
+// }
