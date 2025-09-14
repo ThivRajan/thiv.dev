@@ -13,18 +13,14 @@ export default function ProjectCard({
 	// TODO: add drop shadow on hover
 	return (
 		<a
-			className={`card flex gap-4 rounded p-4 cursor-pointer border group`}
+			className={`card flex gap-4 rounded p-4 cursor-pointer border group h-20`}
 			href={link}
 			target="_blank"
 			rel="noreferrer"
 			style={{ '--card-bg': colors.bg } as CSSProperties}
 		>
-			<img
-				src={img}
-				alt={`${title} Icon`}
-				className="w-1/5 max-w-1/4 object-scale-down"
-			/>
-			<div className="flex flex-col justify-between gap-2">
+			<img src={img} alt={`${title} Icon`} className="w-15 h-15" />
+			<div className="flex flex-col">
 				<h3
 					className={`description font-semibold ${colors.text} transition-all duration-[900ms]`}
 				>
@@ -33,16 +29,6 @@ export default function ProjectCard({
 				<span className={`${colors.text} transition-all duration-[900ms]`}>
 					{description}
 				</span>
-				<div className="flex flex-wrap gap-2">
-					{tags.map((tag) => (
-						<span
-							key={tag}
-							className={`tag rounded p-2 ${colors.tags} transition-all duration-[900ms]`}
-						>
-							{tag}
-						</span>
-					))}
-				</div>
 			</div>
 		</a>
 	)

@@ -1,7 +1,5 @@
-import avatar from '@assets/avatar.png'
-import ContactsBar from '@components/ContactsBar/ContactsBar'
+import avatar from '@assets/favicon.png'
 import Typewriter, { type Options } from 'typewriter-effect'
-import Header from './Header/Header'
 
 const ROLES = [
 	'Software Engineer',
@@ -12,9 +10,9 @@ const ROLES = [
 export default function Hero() {
 	return (
 		<div className="flex flex-col items-center sm:flex-row gap-8">
-			<img src={avatar.src} alt="avatar" className="w-1/3" />
+			<img src={avatar.src} alt="avatar" className="w-1/3 float-wrapper" />
 			<div className="flex flex-col items-center sm:items-start gap-4 w-full">
-				<Header title="THIV RAJAN" animateDuration={3} color="rgb(2 6 23)" />
+				<h1 className="text-5xl font-bold">Thiv Rajan</h1>
 				<div
 					className="rounded p-4 min-w-[35ch] w-full max-w-full"
 					style={{
@@ -35,9 +33,6 @@ export default function Hero() {
 							}
 						/>
 					</code>
-				</div>
-				<div className="lg:hidden block">
-					<ContactsBar />
 				</div>
 			</div>
 		</div>

@@ -21,13 +21,11 @@ import './index.scss'
 	</head>
 	<body>
 		<div class="h-screen min-h-full flex justify-center overflow-auto relative">
-			<div class="float-wrapper hidden lg:block fixed right-10 top-1/2">
-				<ContactsBar client:idle />
-			</div>
 			<div class="flex flex-col w-full h-max p-6 max-w-2xl gap-8">
 				<Hero client:idle />
-				<Projects />
+				<ContactsBar client:idle />
 				<Experience client:idle />
+				<Projects />
 			</div>
 		</div>
 	</body>
