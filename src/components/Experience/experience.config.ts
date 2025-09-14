@@ -20,6 +20,7 @@ export const EXPERIENCE_CONFIG = [
 			text: 'group-hover:text-gray-800',
 			tags: 'group-hover:bg-gray-800',
 		},
+		years: '2024 - Present',
 	},
 	{
 		tags: ['TypeScript', 'React', 'Node.js'],
@@ -32,6 +33,7 @@ export const EXPERIENCE_CONFIG = [
 			text: 'group-hover:text-gray-800',
 			tags: 'group-hover:bg-gray-800',
 		},
+		years: '2020 - 2024',
 	},
 	{
 		tags: ['TypeScript', 'React', 'Node.js'],
@@ -44,5 +46,6 @@ export const EXPERIENCE_CONFIG = [
 			text: 'group-hover:text-gray-800',
 			tags: 'group-hover:bg-gray-800',
 		},
+		years: '2021 - 2022',
 	},
 ]

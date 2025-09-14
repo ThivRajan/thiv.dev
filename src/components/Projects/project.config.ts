@@ -15,4 +15,10 @@ export const PROJECT_CONFIG = [
 	},
 ]
 
-export type Project = (typeof PROJECT_CONFIG)[number]
+export type Project = {
+	title: string
+	description: string
+	img: string
+	link: string
+	years?: string
+}

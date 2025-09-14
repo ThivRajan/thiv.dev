@@ -3,12 +3,11 @@ import type { Project } from '../project.config'
 import './ProjectCard.scss'
 
 export default function ProjectCard({
-	tags,
 	title,
 	description,
 	img,
 	link,
-	colors,
+	years,
 }: Project) {
 	return (
 		<Card>
@@ -25,7 +24,7 @@ export default function ProjectCard({
 				/>
 				<div className="flex flex-col justify-center">
 					<h2 className={`text-base font-semibold`}>{title}</h2>
-					<i className="text-xs">2021 - 2025</i>
+					{!!years && <i className="text-xs">{years}</i>}
 					<span className={`text-sm`}>{description}</span>
 				</div>
 			</a>
