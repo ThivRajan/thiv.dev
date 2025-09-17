@@ -1,6 +1,6 @@
 import avatar from '@assets/favicon.png'
-import ContactsBar from '@components/ContactsBar/ContactsBar'
 import Typewriter, { type Options } from 'typewriter-effect'
+import ContactsBar from './ContactsBar/ContactsBar'
 
 const ROLES = ['Fullstack Software Engineer'].map((role) => `// ${role}`)
 
