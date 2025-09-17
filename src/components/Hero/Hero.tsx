@@ -11,8 +11,8 @@ export default function Hero() {
 			<div className="flex flex-col gap-4">
 				<div className="flex flex-col items-center sm:items-start gap-2 w-full">
 					<h1 className="text-5xl font-bold">Thiv Rajan</h1>
-					<div className="min-w-[35ch] w-full max-w-full">
-						<code className="text-gray-500 italic">
+					<div className="min-w-[33ch] w-full max-w-full ">
+						<code className="italic align-center text-gray-400">
 							<Typewriter
 								options={
 									{

@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 body {
-	--app-bg: rgb(44, 45, 53);
-	--app-fg: rgb(67, 67, 67);
+	--app-bg: rgb(40, 41, 45);
+	--app-fg: rgb(106, 106, 106);
 	--app-highlight: rgb(0, 0, 0);
 
 	font-family: 'Noto Sans';
 	background: var(--app-bg);
-	color: rgb(255, 230, 230);
+	color: white;
 }
 
 h1 {
