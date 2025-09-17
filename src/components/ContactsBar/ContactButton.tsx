@@ -1,0 +1,24 @@
+import { Icon } from '@iconify/react'
+
+export interface ContactButtonProps {
+	link: string
+	icon: string
+	hoverColor: string
+}
+export default function ContactButton({
+	link,
+	icon,
+	hoverColor,
+}: ContactButtonProps) {
+	return (
+		<a
+			href={link}
+			target="_blank"
+			rel="noreferrer"
+			style={{ '--hover-color': hoverColor } as React.CSSProperties}
+			className={`block p-2 w-fit text-2xl border-2 border-gray-400 text-gray-400 hover:border-[var(--hover-color)] hover:text-[var(--hover-color)] hover:border-white hover:text-white rounded cursor-pointer shadow-md transition-all duration-700`}
+		>
+			<Icon icon={icon} />
+		</a>
+	)
+}
