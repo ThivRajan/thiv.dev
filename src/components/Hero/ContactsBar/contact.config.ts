@@ -7,12 +7,12 @@ export const CONTACT_CONFIG: ContactButtonProps[] = [
 		hoverColor: 'var(--linkedin)',
 	},
 	{
-		icon: 'codicon:github',
+		icon: 'mdi:github',
 		link: 'https://github.com/ThivRajan',
 		hoverColor: 'var(--github)',
 	},
 	{
-		icon: 'codicon:mail',
+		icon: 'tabler:mail-filled',
 		link: 'mailto:thiv.rajan@gmail.com',
 		hoverColor: 'var(--email)',
 	},
