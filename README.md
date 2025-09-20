@@ -5,7 +5,14 @@
   thiv.dev
 </h1>
 
-<p align="center">The second version of my portfolio website. Check out the <a href="https://github.com/ThivRajan/thiv.dev/tree/v1">v1 branch</a> for the old version.</p>
+<div align="center">
+    <p>The third version of my portfolio website.</p>
+    <p>
+        Previous versions:
+        <a href="https://github.com/ThivRajan/thiv.dev/tree/v1">v1</a>,
+        <a href="https://github.com/ThivRajan/thiv.dev/tree/v2">v2</a>
+    </p>
+</div>
 
 ## Commands
 
