@@ -9,7 +9,7 @@ interface Job {
 export const EXPERIENCE_CONFIG: Job[] = [
 	{
 		title: 'Cisco Meraki',
-		description: 'Better networking through the cloud',
+		description: 'Building global cloud-managed networking solutions',
 		link: 'https://meraki.cisco.com/',
 		years: '2024 - Present',
 		role: 'Software Engineer',
@@ -17,7 +17,8 @@ export const EXPERIENCE_CONFIG: Job[] = [
 	},
 	{
 		title: 'Environment & Climate Change Canada',
-		description: 'Mission-critical web applications for meteorological data',
+		description:
+			'Powering mission-critical meteorological applications across Canada',
 		link: 'https://www.canada.ca/en/environment-climate-change.html',
 		years: '2020 - 2024',
 		role: 'Software Developer',

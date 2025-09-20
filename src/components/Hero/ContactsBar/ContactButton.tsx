@@ -16,7 +16,7 @@ export default function ContactButton({
 			target="_blank"
 			rel="noreferrer"
 			style={{ '--hover-color': hoverColor } as React.CSSProperties}
-			className={`p-2 w-fit text-3xl bg-[var(--app-fg)] hover:bg-[var(--hover-color)] text-[var(--app-bg)] rounded cursor-pointer shadow-md transition-all duration-300`}
+			className={`p-2 w-fit text-3xl bg-[var(--app-fg)] hover:bg-[var(--hover-color)] text-[var(--app-bg)] rounded cursor-pointer transition-all duration-300`}
 		>
 			<Icon icon={icon} />
 		</a>
