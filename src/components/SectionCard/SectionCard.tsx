@@ -18,9 +18,9 @@ export default function SectionCard({
 }: SectionCardProps) {
 	return (
 		<div className="flex flex-col justify-center gap-1">
-			{!!years && <i className="text-xs text-[var(--app-fg)]">{years}</i>}
+			{!!years && <i className="text-sm text-[var(--app-fg)]">{years}</i>}
 			<a
-				className="font-semibold hover:text-[var(--hover-color)] transition-all duration-500"
+				className="text-lg font-semibold hover:text-[var(--hover-color)] transition-all duration-500"
 				style={{ '--hover-color': hoverColor } as React.CSSProperties}
 				href={link}
 				target="_blank"
@@ -33,7 +33,7 @@ export default function SectionCard({
 					className="align-middle inline-block ml-1"
 				/>
 			</a>
-			<span className="text-sm text-[var(--app-fg)]">{description}</span>
+			<span className="text-[var(--app-fg)]">{description}</span>
 		</div>
 	)
 }
