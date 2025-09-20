@@ -1,4 +1,12 @@
-export const EXPERIENCE_CONFIG = [
+interface Job {
+	tags: string[]
+	title: string
+	description: string
+	link: string
+	years: string
+	role: string
+}
+export const EXPERIENCE_CONFIG: Job[] = [
 	{
 		tags: ['TypeScript', 'React', 'Node.js'],
 		title: 'Cisco Meraki',

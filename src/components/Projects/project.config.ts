@@ -1,11 +1,10 @@
-export type Project = {
+interface Project {
 	tags: string[]
 	title: string
 	description: string
 	link: string
 }
-
-export const PROJECT_CONFIG = [
+export const PROJECT_CONFIG: Project[] = [
 	{
 		tags: ['TypeScript', 'React', 'Node.js'],
 		title: 'Muse',
