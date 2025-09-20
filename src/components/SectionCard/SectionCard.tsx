@@ -22,7 +22,7 @@ export default function SectionCard({
 			rel="noreferrer"
 		>
 			<div className="flex flex-col justify-center gap-1">
-				{!!years && <i className="text-xs text-gray-400">{years}</i>}
+				{!!years && <i className="text-xs text-[var(--app-fg)]">{years}</i>}
 				<span className="flex items-center gap-2 hover:underline">
 					<h2 className="text-base font-semibold">
 						{!!role && <span className="text-sm">{role} - </span>}
@@ -30,7 +30,7 @@ export default function SectionCard({
 					</h2>
 					<Icon icon="material-symbols:arrow-outward" />
 				</span>
-				<span className="text-sm text-gray-400">{description}</span>
+				<span className="text-sm text-[var(--app-fg)]">{description}</span>
 			</div>
 		</a>
 	)

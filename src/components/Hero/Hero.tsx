@@ -12,7 +12,7 @@ export default function Hero() {
 				<div className="flex flex-col items-center sm:items-start gap-2 w-full">
 					<h1 className="text-5xl font-bold">Thiv Rajan</h1>
 					<div className="min-w-[33ch] w-full max-w-full ">
-						<code className="italic align-center text-gray-400">
+						<code className="italic align-center text-[var(--app-fg)]">
 							<Typewriter
 								options={
 									{

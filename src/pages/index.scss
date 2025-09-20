@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 body {
+	/* Global colours */
 	--app-bg: rgb(40, 41, 45);
-	--app-fg: rgb(106, 106, 106);
+	--app-fg: rgb(156, 163, 175);
 	--app-highlight: rgb(0, 0, 0);
-
-	font-family: 'Noto Sans';
-	background: var(--app-bg);
 	color: white;
+
+	background: var(--app-bg);
+	font-family: 'Noto Sans';
 }
 
 h1 {
