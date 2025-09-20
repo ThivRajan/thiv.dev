@@ -5,6 +5,7 @@ interface Job {
 	link: string
 	years: string
 	role: string
+	hoverColor: string
 }
 export const EXPERIENCE_CONFIG: Job[] = [
 	{
@@ -14,6 +15,7 @@ export const EXPERIENCE_CONFIG: Job[] = [
 		link: 'https://meraki.cisco.com/',
 		years: '2024 - Present',
 		role: 'Software Engineer',
+		hoverColor: 'var(--cisco-meraki)',
 	},
 	{
 		tags: ['TypeScript', 'React', 'Node.js'],
@@ -22,6 +24,7 @@ export const EXPERIENCE_CONFIG: Job[] = [
 		link: 'https://www.canada.ca/en/environment-climate-change.html',
 		years: '2020 - 2024',
 		role: 'Software Developer',
+		hoverColor: 'var(--eccc)',
 	},
 	{
 		tags: ['TypeScript', 'React', 'Node.js'],
@@ -30,5 +33,6 @@ export const EXPERIENCE_CONFIG: Job[] = [
 		link: 'https://www.cionstudio.com/',
 		years: '2021 - 2022',
 		role: 'Web Developer',
+		hoverColor: 'var(--cion)',
 	},
 ]

@@ -6,6 +6,7 @@ interface SectionCardProps {
 	link: string
 	years?: string
 	role?: string
+	hoverColor?: string
 }
 export default function SectionCard({
 	title,
@@ -13,6 +14,7 @@ export default function SectionCard({
 	link,
 	years,
 	role,
+	hoverColor,
 }: SectionCardProps) {
 	return (
 		<a
@@ -21,9 +23,12 @@ export default function SectionCard({
 			target="_blank"
 			rel="noreferrer"
 		>
-			<div className="flex flex-col justify-center gap-1">
+			<div
+				className="flex flex-col justify-center gap-1 hover:text-[var(--hover-color)] transition-all duration-500"
+				style={{ '--hover-color': hoverColor } as React.CSSProperties}
+			>
 				{!!years && <i className="text-xs text-[var(--app-fg)]">{years}</i>}
-				<span className="flex items-center gap-2 hover:underline">
+				<span className="flex items-center gap-2">
 					<h2 className="text-base font-semibold">
 						{!!role && <span className="text-sm">{role} - </span>}
 						{title}

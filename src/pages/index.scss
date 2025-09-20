@@ -9,6 +9,19 @@ body {
 	--app-highlight: rgb(0, 0, 0);
 	color: white;
 
+	/* Contacts Colours */
+	--linkedin: #8db1f0;
+	--github: white;
+	--email: #e0a2a2;
+
+	/* Experience Colours */
+	--cisco-meraki: #a8d395;
+	--eccc: rgb(212, 165, 165);
+	--cion: #a5e6f5;
+
+	/* Project Colours */
+	--muse: rgb(191, 191, 181);
+
 	background: var(--app-bg);
 	font-family: 'Noto Sans';
 }
