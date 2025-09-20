@@ -18,25 +18,22 @@ export default function SectionCard({
 }: SectionCardProps) {
 	return (
 		<a
-			className="project flex gap-4"
+			className="flex flex-col justify-center gap-1 hover:text-[var(--hover-color)] transition-all duration-500"
+			style={{ '--hover-color': hoverColor } as React.CSSProperties}
 			href={link}
 			target="_blank"
 			rel="noreferrer"
 		>
-			<div
-				className="flex flex-col justify-center gap-1 hover:text-[var(--hover-color)] transition-all duration-500"
-				style={{ '--hover-color': hoverColor } as React.CSSProperties}
-			>
-				{!!years && <i className="text-xs text-[var(--app-fg)]">{years}</i>}
-				<span className="flex items-center gap-2">
-					<h2 className="text-base font-semibold">
-						{!!role && <span className="text-sm">{role} - </span>}
-						{title}
-					</h2>
-					<Icon icon="material-symbols:arrow-outward" />
-				</span>
-				<span className="text-sm text-[var(--app-fg)]">{description}</span>
-			</div>
+			{!!years && <i className="text-xs text-[var(--app-fg)]">{years}</i>}
+			<h2 className="font-semibold">
+				{!!role && <span>{role} &#x2022; </span>}
+				{title}
+				<Icon
+					icon="material-symbols:arrow-outward"
+					className="align-middle inline-block ml-1"
+				/>
+			</h2>
+			<span className="text-sm text-[var(--app-fg)]">{description}</span>
 		</a>
 	)
 }

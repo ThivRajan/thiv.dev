@@ -1,5 +1,4 @@
 interface Job {
-	tags: string[]
 	title: string
 	description: string
 	link: string
@@ -9,7 +8,6 @@ interface Job {
 }
 export const EXPERIENCE_CONFIG: Job[] = [
 	{
-		tags: ['TypeScript', 'React', 'Node.js'],
 		title: 'Cisco Meraki',
 		description: 'Better networking through the cloud',
 		link: 'https://meraki.cisco.com/',
@@ -18,7 +16,6 @@ export const EXPERIENCE_CONFIG: Job[] = [
 		hoverColor: 'var(--cisco-meraki)',
 	},
 	{
-		tags: ['TypeScript', 'React', 'Node.js'],
 		title: 'Environment & Climate Change Canada',
 		description: 'Mission-critical web applications for meteorological data',
 		link: 'https://www.canada.ca/en/environment-climate-change.html',
@@ -27,7 +24,6 @@ export const EXPERIENCE_CONFIG: Job[] = [
 		hoverColor: 'var(--eccc)',
 	},
 	{
-		tags: ['TypeScript', 'React', 'Node.js'],
 		title: 'Cion Studio',
 		description: 'Enabling creators to build and scale their businesses',
 		link: 'https://www.cionstudio.com/',
