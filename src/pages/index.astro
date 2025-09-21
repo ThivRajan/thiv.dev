@@ -18,15 +18,11 @@ import './index.scss'
 		<meta name="viewport" content="width=device-width" />
 		<title>Thiv Rajan</title>
 	</head>
-	<body>
-		<div
-			class="h-screen min-h-full flex justify-center overflow-auto relative mt-[3rem]"
-		>
-			<div class="flex flex-col w-full h-max p-6 max-w-xl gap-8">
-				<Hero client:idle />
-				<Experience client:idle />
-				<Projects client:idle />
-			</div>
+	<body class="h-screen min-h-full flex justify-center overflow-auto relative">
+		<div class="flex flex-col w-full h-max p-6 max-w-xl gap-8 pt-[4rem]">
+			<Hero client:idle />
+			<Experience client:idle />
+			<Projects client:idle />
 		</div>
 	</body>
 </html>
