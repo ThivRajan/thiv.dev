@@ -3,26 +3,45 @@
 @tailwind utilities;
 
 body {
-	--app-bg: rgb(55 65 81);
-	--app-fg: rgb(71 85 105);
-	--app-highlight: rgb(30 41 59);
+	/* Global colours */
+	--app-bg: rgb(40, 41, 45);
+	--app-fg: rgb(156, 163, 175);
+	--app-highlight: rgb(0, 0, 0);
+	color: white;
 
-	font-family: 'Noto Sans';
+	/* Contacts Colours */
+	--linkedin: #6487c5;
+	--github: white;
+	--email: #e1d68e;
+
+	/* Experience Colours */
+	--cisco-meraki: #a8d395;
+	--eccc: rgb(212, 165, 165);
+	--cion: #a5e6f5;
+
+	/* Project Colours */
+	--muse: rgb(191, 191, 181);
+
 	background: var(--app-bg);
+	font-family: 'Noto Sans';
+}
+
+h1 {
+	font-family: 'Namdhinggo', serif;
 }
 
 .float-wrapper {
 	animation: float 1.75s ease-in-out infinite;
+}
 
-	@keyframes float {
-		0% {
-			transform: translateY(-50%);
-		}
-		50% {
-			transform: translateY(calc(10px - 50%));
-		}
-		100% {
-			transform: translateY(-50%);
-		}
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
 	}
 }

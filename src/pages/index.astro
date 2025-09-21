@@ -1,5 +1,4 @@
 ---
-import ContactsBar from '@components/ContactsBar/ContactsBar'
 import Experience from '@components/Experience/Experience'
 import Hero from '@components/Hero/Hero'
 import Projects from '@components/Projects/Projects'
@@ -13,21 +12,20 @@ import './index.scss'
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Namdhinggo:wght@400;500;600;700;800&display=swap&display=swap"
 			rel="stylesheet"
 		/>
 		<meta name="viewport" content="width=device-width" />
 		<title>Thiv Rajan</title>
 	</head>
 	<body>
-		<div class="h-screen min-h-full flex justify-center overflow-auto relative">
-			<div class="float-wrapper hidden lg:block fixed right-10 top-1/2">
-				<ContactsBar client:idle />
-			</div>
-			<div class="flex flex-col w-full h-max p-6 max-w-2xl gap-8">
+		<div
+			class="h-screen min-h-full flex justify-center overflow-auto relative mt-[3rem]"
+		>
+			<div class="flex flex-col w-full h-max p-6 max-w-xl gap-8">
 				<Hero client:idle />
-				<Projects />
 				<Experience client:idle />
+				<Projects client:idle />
 			</div>
 		</div>
 	</body>
