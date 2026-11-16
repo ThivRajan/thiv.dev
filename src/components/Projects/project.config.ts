@@ -5,10 +5,10 @@ interface Project {
 	hoverColor: string
 }
 export const PROJECT_CONFIG: Project[] = [
-	{
-		title: 'Muse',
-		description: 'Generate AI cover letters in one click',
-		link: 'https://chromewebstore.google.com/detail/muse-ai-cover-letters-in/bodebbnhcdimdjiakhoijjfoabdjlfop',
-		hoverColor: 'var(--muse)',
-	},
+	// {
+	// 	title: 'Muse',
+	// 	description: 'Generate AI cover letters in one click',
+	// 	link: 'https://chromewebstore.google.com/detail/muse-ai-cover-letters-in/bodebbnhcdimdjiakhoijjfoabdjlfop',
+	// 	hoverColor: 'var(--muse)',
+	// },
 ]
